@@ -21,7 +21,7 @@ INSERT INTO tb_alune (ra, nome, turma, idade, nota) VALUES (NULL, 'Mario',3, 11,
 
 SELECT * FROM tb_alune where nota >7;
 SELECT * FROM tb_alune where nota <7;
-UPDATE tb_alune set nome = "Edna Silva" where ra = NULL
+UPDATE tb_alune set nome = "Edna Silva" where ra = NULL;
 
 
 
