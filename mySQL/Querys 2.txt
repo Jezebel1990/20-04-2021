@@ -1,0 +1,24 @@
+create database db_ecommerce;
+use db_ecommerce;
+
+create table tb_produtos (
+codigo int (4) AUTO_INCREMENT,
+categoria varchar(30) NOT NULL,
+marca varchar (40) NOT NULL,
+estoque boolean,
+valor double NOT NULL,
+PRIMARY KEY(codigo)
+);
+
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, "Smartphone", "Samsung", true,2000);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, "Tênis", "Nike", true,400);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, " Console Playstation 4 ", "Sony", false,1700);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, "Anel Life Topázio", " Vivara", true,390);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, " Relógio Smartwatch", " Garmin", true,1700);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, "Bolsa Tote ", "Arezzo", true,600);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, " Chanel Nº 5", "Eau de Parfum", true,429);
+INSERT INTO tb_produtos (codigo, categoria, marca, estoque, valor) VALUES (NULL, "Smart TV", "LG", true,1300);
+SELECT * FROM tb_produtos
+SELECT * FROM tb_produtos where valor >500;
+SELECT * FROM tb_produtos where valor <500;
+UPDATE tb_produtos SET marca = "PHILIPS"  WHERE codigo = 8;
